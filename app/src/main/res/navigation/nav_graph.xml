@@ -20,4 +20,9 @@
         android:name="com.example.inventariando.Profile"
         android:label="fragment_profile"
         tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/addList2"
+        android:name="com.example.inventariando.AddList"
+        android:label="fragment_add_list"
+        tools:layout="@layout/fragment_add_list" />
 </navigation>

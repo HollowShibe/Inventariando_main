@@ -11,6 +11,7 @@ import android.view.ViewGroup
 import android.widget.ArrayAdapter
 import android.widget.Button
 import android.widget.LinearLayout
+import android.widget.Toast
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.fragment.app.FragmentContainerView
 import androidx.lifecycle.findViewTreeViewModelStoreOwner
@@ -41,7 +42,8 @@ class List : Fragment(), MyInterface {
        val fragment = childFragmentManager.findFragmentById(R.id.inputNombre) as AddList
         fragment.listener = this
         fragment.listener2 = this
-
+        Toast.makeText(activity as Context, "Bienvenido de nuevo, $email", Toast.LENGTH_LONG)
+            .show()
     }
     override fun transferMessage(title: String) {
         binding.inputNombre.visibility = View.GONE
